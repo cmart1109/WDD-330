@@ -5,7 +5,7 @@ const dataSource = new ProductData("tents");
 
 function addProductToCart(product) {
   const cart = getLocalStorage("so-cart") || [];
-  cart.push(product)
+  cart.push(product);
   setLocalStorage("so-cart", cart);
 }
 
